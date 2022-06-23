@@ -140,7 +140,6 @@ select {
 
 .powers {
   margin-right: 200px;
-  height: 350px;
 }
 
 /* Basic styling */
@@ -204,26 +203,25 @@ select {
 }
 
 .rad-design {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: linear-gradient(
-    to right bottom,
-    hsl(193, 97%, 62%),
-    hsl(225, 70%, 43%)
-  );
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
 }
 
 .rad-design::before {
-  content: "";
+  content: '';
+  display: inline-block;
   width: inherit;
   height: inherit;
   border-radius: inherit;
+
   background: hsl(0, 0%, 90%);
-  transition: 0.3s;
+  transform: scale(1.1);
+  transition: .3s;
 }
 
-.rad-input:checked + .rad-design::before {
+.rad-input:checked+.rad-design::before {
   transform: scale(0);
 }
 
