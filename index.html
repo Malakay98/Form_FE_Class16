@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Coso</title>
+  </head>
+  <body>
+    <header>
+      <p>20% de descuento en todos los productos</p>
+      <nav>
+        <h2>Nombre Tienda</h2>
+      </nav>
+      <nav class="second_nav">
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Registrarme</a></li>
+          <li><a href="#">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form">
+        <div class="text">
+          <h1>Añadí tu super!</h1>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+        <form action="">
+          <div class="firstDiv">
+            <div class="firstDivItem">
+              <label for="Nombre">*Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="Nombre"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="firstDivItem">
+              <label for="Especie">*Especie</label>
+              <select name="especie" id="Especie">
+                <option value="Coso1" selected>Coso1</option>
+                <option value="Coso2">Coso2</option>
+                <option value="Coso3">Coso3</option>
+                <option value="Coso4">Coso4</option>
+              </select>
+            </div>
+          </div>
+          <div class="secondDiv">
+            <div class="firstDivItem">
+              <label for="Fecha">Fecha</label>
+              <input type="date" name="fecha" id="Fecha" />
+            </div>
+            <div class="firstDivItem">
+              <label for="Foto">Agregar Foto</label>
+              <input
+                type="file"
+                name="foto"
+                id="Foto"
+                accept=".jpg, .pdf, .png"
+              />
+            </div>
+          </div>
+          <div class="thirdDiv">
+            <div class="DivItem textarea">
+              <textarea name="descripcion" id="Descripcion" cols="30" rows="10">
+                Descripción</textarea
+              >
+            </div>
+            <div class="DivItem powers">
+              <p>Poderes</p>
+              <div>
+                <input type="checkbox" name="volar" id="Volar" value="Volar" />
+                <label class="label" for="Volar">Volar</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="inteligencia"
+                  id="Superinteligencia"
+                  value="Superinteligencia"
+                />
+                <label for="Superinteligencia">Superinteligencia</label>
+              </div>
+              <div>
+                <input type="checkbox" name="laser" id="Laser" value="Laser" />
+                <label class="label" for="Laser">Vista de rayos láser</label>
+              </div>
+              <div class="billetera">
+                <input
+                  type="checkbox"
+                  name="BilleteraGorda"
+                  id="Billetera"
+                  value="Billetera"
+                />
+                <label class="label" for="Billetera">Billetera gorda</label>
+              </div>
+
+              <hr />
+              <br />
+              <p class="charP">Tipo de personaje</p>
+              <div>
+                <label for="Hero" class="rad-label">
+                  <input
+                    type="radio"
+                    id="Hero"
+                    name="typeSuper"
+                    value="hero"
+                    class="rad-input"
+                  />
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Héore / Heroina</div>
+                </label>
+              </div>
+              <div>
+                <label for="Villain" class="rad-label"
+                  ><input
+                    type="radio"
+                    id="Villain"
+                    name="typeSuper"
+                    value="villain"
+                    class="rad-input"
+                  />
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Villano / Villana</div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="DivItem button">
+            <input type="submit" value="Añadir" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>
